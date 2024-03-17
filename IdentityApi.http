@@ -1,0 +1,13 @@
+@IdentityApiDemo_HostAddress = http://localhost:5023
+
+GET {{IdentityApiDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{IdentityApiDemo_HostAddress}}/identity/register
+Content-Type: application/json
+
+{
+  "email": "nam@example.com",
+  "password": "P@ssw0rd"
+}
